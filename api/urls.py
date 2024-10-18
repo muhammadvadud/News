@@ -9,5 +9,5 @@ urlpatterns = [
     path('comment/', CommentApiView.as_view(), name='comment'),
     path('category/', CategoryApiView.as_view(), name='category'),
     path('tag/', TagApiView.as_view(), name='tag'),
-    path('<slug:slug>/', ArticleDetailApiView.as_view(), name='article_detail'),
+    path('article/<slug:slug>/', ArticleDetailApiView.as_view(), name='article_detail'),
 ]
